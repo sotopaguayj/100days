@@ -1,0 +1,17 @@
+[
+  {
+    "day": "1",
+    "name": "Profile Card",
+    "done": true
+  },
+  {
+    "day": "2",
+    "name": "Blog Preview Card",
+    "done": false
+  },
+  {
+    "day": "3",
+    "name": "Product Info",
+    "done": false
+  }
+]
