@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: ease-in .15s;
+}
+
+:root {
+  --fuente: "Figtree", sans-serif;
+}
+
+body {
+  font-family: var(--fuente);
+  background-color: #F2CF5D;
+}
+
+.cont {
+  display: grid;
+  place-content: center;
+  height: 100dvh;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #FFF;
+  padding: 20px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 0px #000;
+}
+
+.article {
+  width: 336px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.tag {
+  background-color: #F2CF5D;
+  padding:7px 10px;
+  font-weight: 800;
+  border-radius: 3px;
+  align-self: flex-start;
+}
+.date{
+  font-weight: 500;
+  font-size: 14px;
+}
+.title{
+  font-size: 26px;
+  font-weight: 800;
+}
+.title:hover{
+  color: #F2CF5D;
+  cursor: pointer;
+}
+.ph{
+  color: #7F7F7F;
+  width: 336px;
+}
+.foot{
+  align-self: flex-start;
+  display: flex ;
+  align-items: center;
+  gap: .5rem;
+}
+.foot img{
+  width: 32px;
+  height: 32px;
+}
+.foot span{
+  font-weight: 800;
+  font-size: 14px;
+}

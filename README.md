@@ -2,6 +2,9 @@
 
 Construido con HTML, CSS y JavaScript, para mejorar nuestras habilidades de codificación. Este proyecto es parte del desafío #100daysofprojects promovido por [Frontend Club](https://www.facebook.com/frontendclubfb).
 
+**Retos**
+- 2/100
+
 
 **Tecnologías**
 
