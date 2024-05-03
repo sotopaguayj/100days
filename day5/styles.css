@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: ease-in .15s;
+}
+
+:root {
+  --cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  --mons: "Montserrat", sans-serif;
+  --frau: "Fraunces";
+}
+
+body {
+  font-size: 14px;
+  font-family: var(--frau);
+  background-color: var(--Cream);
+}
+
+.cont {
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  border-radius: .5rem;
+  overflow: hidden;
+  background-color: var(--White);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  animation: cardAnimate .5s ease;
+}
+
+.productd {
+  width: 400px;
+}
+
+.productm {
+  display: none;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 400px;
+  padding: 2.5rem;
+}
+
+.tag {
+  font-family: var(--mons);
+  letter-spacing: 8px;
+  color: var(--Darkgrayishblue);
+  font-weight: 600;
+}
+
+.title {
+  color: var(--Verydarkblue);
+  font-size: 43px;
+}
+
+.ph {
+  color: var(--Darkgrayishblue);
+  font-size: 20px;
+  font-family: var(--mons);
+  line-height: 24px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 10px 0px;
+}
+
+.before {
+  color: var(--cyan);
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.after {
+  text-decoration: line-through;
+  color: var(--Darkgrayishblue);
+  font-size: 18px;
+}
+
+.buy {
+  background-color: var(--cyan);
+  color: var(--White);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.buy:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.buy span {
+  font-family: var(--mons);
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 800px) {
+  .productd {
+    display: none;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    animation: cardAnimateMobile .5s ease;
+  }
+
+  .productm {
+    width: 400px;
+    display: block;
+  }
+}
+
+@keyframes cardAnimate {
+  from {
+    transform: rotate(25deg);
+    opacity: 0;
+    width: 0px;
+  }
+
+  to {
+    transform: rotate(0);
+    opacity: 1;
+    width: 800px;
+  }
+}
+
+@keyframes cardAnimateMobile {
+  from {
+    opacity: 0;
+    width: 0px;
+  }
+
+  to {
+    opacity: 1;
+    width: 400px;
+  }
+}

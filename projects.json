@@ -18,5 +18,35 @@
     "day": "4",
     "name": "Analytics",
     "done": true
+  },
+  {
+    "day": "5",
+    "name": "Product Preview Card Component",
+    "done": true
+  },
+  {
+    "day": "6",
+    "name": "Results Summary Component",
+    "done": false
+  },
+  {
+    "day": "7",
+    "name": "QR Code Component",
+    "done": false
+  },
+  {
+    "day": "8",
+    "name": "NFT Preview Card Component",
+    "done": false
+  },
+  {
+    "day": "9",
+    "name": "Order Summary Component",
+    "done": false
+  },
+  {
+    "day": "10",
+    "name": "Stats Preview Card Component",
+    "done": false
   }
 ]
