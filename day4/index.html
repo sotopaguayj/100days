@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="sotopaguayj" />
+  <meta name="title" content="Analytics" />
+  <meta name="description" content="challenge 4" />
+  <link rel="shortcut icon" href="../fc.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <title>Analytics</title>
+</head>
+
+<body>
+  <div class="cont">
+    <div class="card">
+      <div class="head">
+        <span class="title">Traffic source types</span>
+        <span class="info">Views · Last 28 days</span>
+      </div>
+      <div class="body">
+        <div class="donnut">
+          <canvas id="myChart"></canvas>
+          <span class="txt">Traffic sources</span>
+        </div>
+        <div class="right">
+          <div class="statics">
+            <div class="label">
+              <span>Channel panel</span>
+              <div class="per">
+                <div class="barDefault bar"></div>
+                <span wi="37.5" class="num">0%</span>
+              </div>
+            </div>
+            <div class="label">
+              <span>Direct or unknow</span>
+              <div class="per">
+                <div class="barDefault bar"></div>
+                <span wi="33.6" class="num">0%</span>
+              </div>
+            </div>
+            <div class="label">
+              <span>Channel panerl</span>
+              <div class="per">
+                <div class="barDefault bar"></div>
+                <span wi="11" class="num">0%</span>
+              </div>
+            </div>
+            <div class="label">
+              <span>External</span>
+              <div class="per">
+                <div class="barDefault bar"></div>
+                <span wi="6" class="num">0%</span>
+              </div>
+            </div>
+
+          </div>
+          <span class="see">See more</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

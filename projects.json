@@ -13,5 +13,10 @@
     "day": "3",
     "name": "Product Info",
     "done": true
+  },
+  {
+    "day": "4",
+    "name": "Analytics",
+    "done": true
   }
 ]
