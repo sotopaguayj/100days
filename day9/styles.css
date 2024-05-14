@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: .2s ease-in;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--Paleblue);
+}
+
+.cont {
+  display: grid;
+  place-content: center;
+  height: 100dvh;
+  position: relative;
+}
+
+.card {
+  background-color: var(--Verypaleblue);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  width: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+  animation: animcard .5s ease-in;
+}
+
+.head {
+  width: 350px;
+}
+
+.text {
+  width: 88%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  margin: .5rem 0;
+  color: var(--Darkblue);
+  font-weight: 900;
+}
+
+.ph {
+  font-size: 14px;
+  font-weight: 400;
+  width: 80%;
+  margin: auto;
+  color: var(--Desaturatedblue);
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.type {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  background-color: var(--Paleblue);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  font-size: 22px;
+  display: grid;
+  place-content: center;
+  color: var(--Desaturatedblue);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: .35rem;
+}
+
+.label {
+  font-weight: 900;
+}
+
+.value {
+  color: var(--Desaturatedblue);
+  font-weight: 400;
+}
+
+.action {
+  text-decoration: underline;
+  font-size: 14px;
+  color: var(--Brightblue);
+  font-weight: 700;
+}
+
+.btn {
+  background-color: var(--Brightblue);
+  border: none;
+  outline: none;
+  border-radius: .5rem;
+  padding: .8rem;
+  width: 90%;
+  margin: 1rem auto 0 auto;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.end {
+  display: block;
+  margin: 1.5rem 0 2.5rem 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--Desaturatedblue);
+}
+
+.btn:hover,
+.action:hover,
+.end:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background-color: #00000088;
+  backdrop-filter: blur(10px);
+  animation: animmodal .5s ease-in;
+}
+
+.modaloff {
+  position: absolute;
+  display: none;
+  
+}
+
+.modalcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--Verypaleblue);
+}
+.modalcard h1{
+  color: chartreuse;
+  font-weight: 700;
+}
+.modalcard small{
+  font-size: 16px;
+}
+@keyframes animcard {
+  from {
+    /* transform: translateY(50px); */
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+
+  to {
+    /* transform: translateY(0); */
+    transform: rotateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animmodal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
