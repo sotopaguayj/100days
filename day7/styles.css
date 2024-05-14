@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: .15s ease-in;
+}
+
+body {
+  background-color: #D5E1EF;
+  font-family: "Outfit", sans-serif;
+}
+
+.cont {
+  display: grid;
+  place-content: center;
+  height: 100dvh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 320px;
+  height: 497px;
+  gap: 16px;
+  box-shadow: 2px 5px 20px #3f3f3f23;
+  animation: animcard .5s ease-in;
+}
+
+.qr {
+  width: 288px;
+  height: 288px;
+  background-color: #2C7DFA;
+  display: grid;
+  place-content: center;
+  border-radius: .5rem;
+  margin-top: 16px;
+  animation: animqr .5s;
+}
+
+.text {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 22px;
+  color: #1F314F;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.ph {
+  color: #7D889E;
+  text-align: center;
+  font-size: 15px;
+
+}
+
+@keyframes animqr {
+  from {
+    /* width: 0; */
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  to {
+    /* width: 288px; */
+    height: 288px;
+    opacity: 1;
+  }
+}
+
