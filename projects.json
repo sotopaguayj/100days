@@ -48,5 +48,30 @@
     "day": "10",
     "name": "Stats Preview Card Component",
     "done": true
+  },
+  {
+    "day": "11",
+    "name": "Column Preview Card Component",
+    "done": true
+  },
+  {
+    "day": "12",
+    "name": "Profile Card Component",
+    "done": false
+  },
+  {
+    "day": "13",
+    "name": "Social Proof Section",
+    "done": false
+  },
+  {
+    "day": "14",
+    "name": "Four Card Feature Section",
+    "done": false
+  },
+  {
+    "day": "15",
+    "name": "Single Price Grid Component",
+    "done": false
   }
 ]
