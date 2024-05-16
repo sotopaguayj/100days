@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+  --Darkcyan: hsl(185, 75%, 39%);
+  --Verydarkblue: hsl(229, 23%, 23%);
+  --Darkgrayishblue: hsl(227, 10%, 46%);
+  --Darkgray: hsl(0, 0%, 59%);
+  --kumb: "Kumbh Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .25s ease;
+}
+
+body {
+  font-family: var(--kumb);
+  background-color: var(--Darkcyan);
+}
+
+.cont {
+  position: relative;
+  height: 100dvh;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  width: 100%;
+}
+
+.topbg,
+.bottombg {
+  position: absolute;
+  z-index: -100;
+}
+
+.bottombg {
+  bottom: -50%;
+  right: -20%;
+}
+
+.topbg {
+  top: -50%;
+  left: -20%;
+}
+
+.card {
+  background-color: #FFF;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: -20px 20px 50px #0000003d;
+}
+
+.picture {
+  border-radius: 50%;
+  height: 96px;
+  width: 96px;
+  position: absolute;
+  outline: solid 5px #FFF;
+  display: grid;
+  place-content: center;
+  top: 25%;
+  overflow: hidden;
+}
+
+.picture img {
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  /* text-align: center; */
+  animation: animinfo .5s ease-in;
+
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.fn {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--Verydarkblue);
+}
+
+.age {
+  color: var(--Darkgrayishblue);
+}
+
+.city {
+  font-size: 16px;
+  color: var(--Darkgrayishblue);
+  margin: .5rem 0;
+  display: block;
+
+}
+
+.stats {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.num {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--Verydarkblue);
+}
+
+.label {
+  font-weight: 400;
+  color: var(--Darkgrayishblue);
+}
+
+@keyframes animimg {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 96px;
+    height: 96px;
+    opacity: 1;
+  }
+}
+
+@keyframes animinfo {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+
+  to {
+    height: 164px;
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .bottombg {
+    bottom: -50%;
+    right: -170%;
+  }
+  
+  .topbg {
+    top: -60%;
+    left: -170%;
+  }
+}
