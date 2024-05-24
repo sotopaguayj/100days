@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --FontLeague: "League Spartan", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1.25s ease-in-out;
+}
+
+body {
+  font-family: var(--FontLeague);
+  font-size: 15px;
+}
+
+.cont {
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.all {
+  display: grid;
+  grid-template-rows: 2;
+  gap: 5rem;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 52px;
+  color: var(--VeryDarkMagenta);
+  width: 65%;
+  font-weight: 700;
+}
+
+.ph {
+  font-size: 20px;
+  width: 85%;
+  color: var(--DarkGrayishMagenta);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 70%;
+  margin: auto;
+}
+
+.rate {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--VeryDarkMagenta);
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.rate1 {
+  align-self: self-start;
+}
+
+.rate2 {
+  align-self: center;
+}
+
+.rate3 {
+  align-self: flex-end;
+}
+
+.bottom {
+  display: flex;
+  gap: 1rem;
+  height: 125%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--VeryDarkMagenta);
+  padding: 2rem;
+  color: #FFF;
+  border-radius: .5rem;
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.pos {
+  color: var(--SoftPink);
+}
+
+.body {
+  line-height: 1.5rem;
+}
+
+.card1 {
+  align-self: flex-start;
+  animation: cardAnim 0.6s ease-in;
+}
+
+.card2 {
+  align-self: center;
+  animation: cardAnim 0.5s ease-in;
+}
+
+.card3 {
+  align-self: flex-end;
+  animation: cardAnim .4s ease-in;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .cont {
+    height: auto;
+    padding: 5rem 0;
+  }
+
+  .top,
+  .right,
+  .left,
+  .rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .top {
+    gap: 3rem;
+  }
+
+  .left {
+    gap: 2rem;
+  }
+
+  .rate1,
+  .rate2,
+  .rate3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .body {
+    font-size: 20px;
+  }
+}
+
+@keyframes cardAnim {
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
