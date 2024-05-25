@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --FontPoppins: "Poppins", sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .15s ease-in;
+}
+body {
+  font-family: var(--FontPoppins);
+}
+.cont{
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+  gap: 4rem;
+}
+.info{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title1,.title2{
+  font-size: 36px;
+}
+.title1{
+  color: var(--GrayishBlue);
+  font-weight: 300;
+}
+.title2{
+  color: var(--VeryDarkBlue);
+}
+.txt{
+  color: var(--GrayishBlue);
+  width: 60%;
+  margin-top: 1rem;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+  width: 85%;
+  margin: auto;
+}
+.card{
+  border-radius: .5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 100%;
+}
+.card:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.div{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.card1{
+  border-top: 5px solid var(--Cyan);
+  animation: animcard .35s ease-in;
+}
+.card2{
+  border-top: 5px solid var(--Red);
+  animation: animcard .3s ease-in;
+}
+.card3{
+  border-top: 5px solid var(--Orange);
+  animation: animcard .25s ease-in;
+}
+.card4{
+  border-top: 5px solid var(--Blue);
+  animation: animcard .2s ease-in;
+}
+
+.cardLabel{
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+.ph{
+  color: var(--GrayishBlue);
+  font-size: 14px;
+}
+
+.image{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+@keyframes animcard {
+  from{
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cont{
+    margin: 5rem 0;
+  }
+  .title1,.title2{
+    font-size: 24px;
+  }
+  .txt{
+    width:80%;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+}
