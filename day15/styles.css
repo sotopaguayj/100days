@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+  --FontKarla: "Karla", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .125s ease;
+}
+
+body {
+  font-family: var(--FontKarla);
+  font-size: 16px;
+  background-color: var(--LightGray);
+  font-weight: 400;
+}
+
+.cont {
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  border-radius: .5rem;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  display: grid;
+  grid-template-rows: repeat(2);
+  max-width: 800px;
+  overflow: hidden;
+  animation: animCard 1s ease-in-out;
+}
+
+.top {
+  padding: 3rem;
+}
+
+.title {
+  color: var(--Cyan);
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+
+.service {
+  color: var(--BrightYellow);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.ph {
+  color: var(--GrayishBlue);
+  font-size: 20px;
+  line-height: 1.8rem;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+
+}
+
+.left {
+  background-color: var(--Cyan);
+}
+
+.right {
+  background-color: #51bebf;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  /* justify-content: center; */
+  gap: 1rem;
+  color: #FFF;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.label {
+  font-size: 24px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.n {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.per {
+  font-size: 20px;
+  color: var(--LightGray);
+  opacity: .5;
+}
+
+.txt {
+  font-size: 22px;
+}
+
+button {
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  color: #FFF;
+  padding: 1rem 0;
+  font-size: 20px;
+  background-color: var(--BrightYellow);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+button:hover{
+  cursor: pointer;
+  scale: 0.95;
+}
+button:active{
+  scale: 0.90;
+}
+.why {
+  line-height: 1.6rem;
+  color: var(--LightGray);
+}
+
+@media only screen and (max-width: 800px) {
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 90%;
+    margin: auto;
+    animation: none;
+  }
+
+  .cont {
+    margin: 5rem 0;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .service {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .txt {
+    font-size: 20px;
+  }
+}
+
+@keyframes animCard {
+  from {
+    height: 0;
+    opacity: 0;
+    transform: skewX(10deg);
+  }
+
+  to {
+    height:  100%;
+    opacity: 1;
+  }
+}
