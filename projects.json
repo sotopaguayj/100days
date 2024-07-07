@@ -73,5 +73,90 @@
     "day": "15",
     "name": "Single Price Grid Component",
     "done": true
+  },
+  {
+    "day": "16",
+    "name": "Huddle Landing Page With a Single Introductory Section",
+    "done": true
+  },
+  {
+    "day": "17",
+    "name": "Social Links Profile",
+    "done": false
+  },
+  {
+    "day": "18",
+    "name": "Recipe Page",
+    "done": false
+  },
+  {
+    "day": "19",
+    "name": "FAQ Accordion",
+    "done": false
+  },
+  {
+    "day": "20",
+    "name": "Interactive Rating Component",
+    "done": false
+  },
+  {
+    "day": "21",
+    "name": "Article Preview Component",
+    "done": false
+  },
+  {
+    "day": "22",
+    "name": "Base Apparel Coming Soon Page",
+    "done": false
+  },
+  {
+    "day": "23",
+    "name": "Intro Component With Sign-Up Form",
+    "done": false
+  },
+  {
+    "day": "24",
+    "name": "Ping Single Column Coming Soon Page",
+    "done": false
+  },
+  {
+    "day": "25",
+    "name": "Testimonials Grid Section",
+    "done": false
+  },
+  {
+    "day": "26",
+    "name": "Fylo Data Storage Component",
+    "done": false
+  },
+  {
+    "day": "27",
+    "name": "Clipboard Landing Page",
+    "done": false
+  },
+  {
+    "day": "28",
+    "name": "Huddle Landing Page With Alternating Feature Blocks",
+    "done": false
+  },
+  {
+    "day": "29",
+    "name": "Fylo Landing Page With Two Column Layout",
+    "done": false
+  },
+  {
+    "day": "30",
+    "name": "Huddle Landing Page With Curved Sections",
+    "done": false
+  },
+  {
+    "day": "31",
+    "name": "Newsletter Sign-Up Form With Success Message",
+    "done": false
+  },
+  {
+    "day": "32",
+    "name": "Age Calculator App",
+    "done": false
   }
 ]
