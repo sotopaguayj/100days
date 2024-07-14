@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --DarkRaspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --RoseWhite: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+  --Outfit: "Outfit";
+  --Young: "Young";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Eggshell);
+  font-family: var(--Outfit);
+  color: var(--WengeBrown);
+}
+.cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--White);
+  padding-bottom: 2rem;
+}
+.img {
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  /* background-color: red; */
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.top h1 {
+  font-family: var(--Young);
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.811);
+  columns: var(--DarkCharcoal);
+}
+.top p {
+  line-height: 24px;
+}
+.time {
+  background-color: var(--RoseWhite);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+}
+.time span {
+  color: var(--DarkRaspberry);
+  font-weight: 700;
+  font-size: 18px;
+}
+.time ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bold {
+  font-size: 16px;
+  color: var(--WengeBrown);
+}
+
+ul {
+  list-style-position: inside;
+}
+.ingr h2,
+.instruc h2,
+.nutrition h2 {
+  margin-bottom: 1.5rem;
+  font-family: var(--Young);
+  font-size: 28px;
+  color: var(--Nutmeg);
+}
+.ingr ul,
+.instruc ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.instruc li {
+  margin-left: 20px;
+}
+
+.instruc span {
+  font-weight: 700;
+}
+
+.nutrition table {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.nutrition table:last-child {
+  border-bottom: none;
+}
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.td {
+  font-weight: 700;
+  color: var(--Nutmeg);
+}
+
+@media only screen and (min-width: 650px) {
+  .cont {
+    width: 650px;
+    margin: 2rem auto;
+    border-radius: 16px;
+  }
+  .img {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 90%;
+    margin: 1.3rem auto;
+  }
+  .image{
+    height: 100%;
+    border-radius: 10px;
+  }
+}

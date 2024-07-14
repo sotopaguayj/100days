@@ -87,7 +87,7 @@
   {
     "day": "18",
     "name": "Recipe Page",
-    "done": false
+    "done": true
   },
   {
     "day": "19",
@@ -157,6 +157,341 @@
   {
     "day": "32",
     "name": "Age Calculator App",
+    "done": false
+  },
+  {
+    "day": "33",
+    "name": "News Homepage",
+    "done": false
+  },
+  {
+    "day": "34",
+    "name": "Notifications Page",
+    "done": false
+  },
+  {
+    "day": "35",
+    "name": "Interactive Card Details Form",
+    "done": false
+  },
+  {
+    "day": "36",
+    "name": "Expenses Chart Component",
+    "done": false
+  },
+  {
+    "day": "37",
+    "name": "Intro Section With Dropdown Navigation",
+    "done": false
+  },
+  {
+    "day": "38",
+    "name": "Time Tracking Dashboard",
+    "done": false
+  },
+  {
+    "day": "39",
+    "name": "Tip Calculator App",
+    "done": false
+  },
+  {
+    "day": "40",
+    "name": "Sunnyside Agency Landing Page",
+    "done": false
+  },
+  {
+    "day": "41",
+    "name": "Blogr Landing Page",
+    "done": false
+  },
+  {
+    "day": "42",
+    "name": "Crowdfunding Product Page",
+    "done": false
+  },
+  {
+    "day": "43",
+    "name": "Interactive Pricing Component",
+    "done": false
+  },
+  {
+    "day": "44",
+    "name": "Loopstudios Landing Page",
+    "done": false
+  },
+  {
+    "day": "45",
+    "name": "Coding Bootcamp Testimonials Slider",
+    "done": false
+  },
+  {
+    "day": "46",
+    "name": "Apps List",
+    "done": false
+  },
+  {
+    "day": "47",
+    "name": "Social Media Dashboard Theme Switcher",
+    "done": false
+  },
+  {
+    "day": "48",
+    "name": "Sign Up Form",
+    "done": false
+  },
+  {
+    "day": "49",
+    "name": "Insure Landing Page",
+    "done": false
+  },
+  {
+    "day": "50",
+    "name": "Buy Subscription Section",
+    "done": false
+  },
+  {
+    "day": "51",
+    "name": "Pricing Component With Toggle",
+    "done": false
+  },
+  {
+    "day": "52",
+    "name": "Sign Up Community",
+    "done": false
+  },
+  {
+    "day": "53",
+    "name": "Project Tracking Intro Component",
+    "done": false
+  },
+  {
+    "day": "54",
+    "name": "Newsletter Popup Template",
+    "done": false
+  },
+  {
+    "day": "55",
+    "name": "Fylo Dark Theme Landing Page",
+    "done": false
+  },
+  {
+    "day": "56",
+    "name": "Pricing Card",
+    "done": false
+  },
+  {
+    "day": "57",
+    "name": "Advice Generator App",
+    "done": false
+  },
+  {
+    "day": "58",
+    "name": "Rent a Car",
+    "done": false
+  },
+  {
+    "day": "59",
+    "name": "Chat App CSS Illustration",
+    "done": false
+  },
+  {
+    "day": "60",
+    "name": "Website",
+    "done": false
+  },
+  {
+    "day": "61",
+    "name": "Log In Form",
+    "done": false
+  },
+  {
+    "day": "62",
+    "name": "Footer Section",
+    "done": false
+  },
+  {
+    "day": "63",
+    "name": "Call to Action Card",
+    "done": false
+  },
+  {
+    "day": "64",
+    "name": "Events List",
+    "done": false
+  },
+  {
+    "day": "65",
+    "name": "Select Account",
+    "done": false
+  },
+  {
+    "day": "66",
+    "name": "Pricing Gradient Card",
+    "done": false
+  },
+  {
+    "day": "67",
+    "name": "Modern Landing Page",
+    "done": false
+  },
+  {
+    "day": "68",
+    "name": "Search Section",
+    "done": false
+  },
+  {
+    "day": "69",
+    "name": "Testimonials",
+    "done": false
+  },
+  {
+    "day": "70",
+    "name": "Dark Pricing Cards",
+    "done": false
+  },
+  {
+    "day": "71",
+    "name": "Upgrade Plan",
+    "done": false
+  },
+  {
+    "day": "72",
+    "name": "Job Cards",
+    "done": false
+  },
+  {
+    "day": "73",
+    "name": "Maintenance Landing Page",
+    "done": false
+  },
+  {
+    "day": "74",
+    "name": "Website Section",
+    "done": false
+  },
+  {
+    "day": "75",
+    "name": "Courses Landing Page",
+    "done": false
+  },
+  {
+    "day": "76",
+    "name": "Storage Plan",
+    "done": false
+  },
+  {
+    "day": "77",
+    "name": "Statistics Component",
+    "done": false
+  },
+  {
+    "day": "78",
+    "name": "Oracle Landing Page",
+    "done": false
+  },
+  {
+    "day": "79",
+    "name": "Log In Authentication",
+    "done": false
+  },
+  {
+    "day": "80",
+    "name": "Pricing Page",
+    "done": false
+  },
+  {
+    "day": "81",
+    "name": "Feedback Modal",
+    "done": false
+  },
+  {
+    "day": "82",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "83",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "84",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "85",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "86",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "87",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "88",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "89",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "90",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "91",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "92",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "93",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "95",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "96",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "97",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "98",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "99",
+    "name": "",
+    "done": false
+  },
+  {
+    "day": "100",
+    "name": "",
     "done": false
   }
 ]
