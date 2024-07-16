@@ -92,12 +92,12 @@
   {
     "day": "19",
     "name": "FAQ Accordion",
-    "done": false
+    "done": true
   },
   {
     "day": "20",
     "name": "Interactive Rating Component",
-    "done": false
+    "done": true
   },
   {
     "day": "21",
