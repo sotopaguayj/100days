@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayishBlue: #ecf2f8;
+  --Manrope: "Manrope";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
+}
+
+body {
+  font-size: 13px;
+  display: grid;
+  place-content: center;
+  height: 100dvh;
+  background-color: var(--LightGrayishBlue);
+  font-family: var(--Manrope);
+}
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 350px;
+  background-color: white;
+  box-shadow: 0 10px 10px #0303030a;
+}
+.banner {
+  overflow: hidden;
+  height: 230px;
+}
+.banner img {
+  width: 100%;
+}
+.info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.title {
+  color: var(--VeryDarkGrayishBlue);
+  font-size: 17px;
+  font-weight: 700;
+}
+.ph {
+  font-weight: 600;
+  color: var(--DesaturatedDarkBlue);
+  line-height: 20px;
+  width: 90%;
+}
+
+.profile img {
+  width: 40px;
+  border-radius: 50%;
+}
+.about {
+  font-size: 13px;
+}
+.icon {
+  background-color: var(--LightGrayishBlue);
+  height: 35px;
+  width: 35px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--VeryDarkGrayishBlue);
+}
+.time {
+  color: var(--GrayishBlue);
+  font-weight: 600;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  padding: 0.8rem 2rem;
+  overflow: hidden;
+  height: 65px;
+}
+.data {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+}
+.links {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transform: translateX(-200px);
+}
+.move {
+  transform: translateX(0px);
+}
+.bg {
+  background-color: var(--VeryDarkGrayishBlue);
+}
+.share {
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--GrayishBlue);
+}
+.links img {
+  width: 20px;
+}
+.foot {
+  position: relative;
+  overflow: hidden;
+}
+.opzero {
+  opacity: 0;
+}
+
+@media only screen and (min-width: 850px) {
+  .card {
+    display: flex;
+    height: 225px;
+    width: 650px;
+    gap: 1rem;
+  }
+  .info {
+    padding: 0;
+  }
+  .banner {
+    width: 520px;
+    height: 225px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+  }
+  .banner img {
+    width: 260px;
+    height: 225px;
+  }
+  .rig {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1.5rem 1rem;
+  }
+  footer {
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+  .ph {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .profile img {
+    width: 35px;
+  }
+  .name {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .time {
+    font-size: 12px;
+  }
+  .foot,
+  .card,
+  footer {
+    overflow: visible;
+  }
+  .links {
+    /* z-index: -100; */
+    opacity: 0;
+    transform: translateX(275px) translateY(-60px);
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    width: auto;
+    background-color: rebeccapurple;
+  }
+  .icon:active ~ .links {
+    opacity: 1;
+  }
+  .tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-left: -15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: var(--VeryDarkGrayishBlue) transparent transparent transparent;
+  }
+  .tooltip {
+    background-color: var(--VeryDarkGrayishBlue);
+    opacity: 1;
+    z-index: 0;
+  }
+}
