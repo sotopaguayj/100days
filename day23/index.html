@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="sotopaguayj" />
+    <meta name="title" content="Intro Component With Sign-Up Form" />
+    <meta name="description" content="challenge 23" />
+    <link rel="shortcut icon" href="../fc.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Intro Component With Sign-Up Form</title>
+  </head>
+  <body>
+    <main class="content">
+      <div class="info">
+        <h2 class="title">Learn to code by watching others</h2>
+        <p class="ph">
+          See how experienced developers solve problems in real-time. Watching
+          scriped tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="asd">
+        <section class="offer">
+          <p class="trialText">
+            <span class="tb">Try it free 7 days</span> then $20/mo. thereafter
+          </p>
+        </section>
+        <form autocomplete="off" id="form" class="form">
+          <div class="inpCont">
+            <input id="fn" class="inp" placeholder="First Name" type="text" />
+            <div class="labels">
+              <small class="msg">First Name cannot be empty</small>
+              <img class="errIcon" src="./images/icon-error.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="inpCont">
+            <input id="ln" class="inp" placeholder="Last Name" type="text" />
+            <div class="labels">
+              <small class="msg">Last Name cannot be empty</small>
+              <img class="errIcon" src="./images/icon-error.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="inpCont">
+            <input
+              id="ea"
+              class="inp"
+              placeholder="Email Address"
+              type="email"
+            />
+            <div class="labels">
+              <small class="msg">Eamil Address cannot be empty</small>
+              <img class="errIcon" src="./images/icon-error.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="inpCont">
+            <input
+              id="pass"
+              class="inp"
+              placeholder="password"
+              type="password"
+            />
+            <div class="labels">
+              <small class="msg">Password cannot be empty</small>
+              <img class="errIcon" src="./images/icon-error.svg" alt="" />
+            </div>
+          </div>
+
+          <button class="btn">CLAIM YOUR FREE TRIAL</button>
+          <div class="footer">
+            <p class="terms">
+              By clicking the button, you are agreeing to our
+              <span class="tys">Terms and Services</span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
