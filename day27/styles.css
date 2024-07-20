@@ -1,1 +1,235 @@
-/* Styles for Day 27 */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --StrongCyan: #26baa4;
+  --LightBlue: #6173ff;
+  --DarkGrayishBlue: #4c545d;
+  --GrayishBlue: #9fabb2;
+  --BJ: "Bai Jamjuree";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.12s ease-in-out;
+}
+
+body {
+  font-family: var(--BJ);
+  margin: auto;
+  background-image: url("./images/bg-header-mobile.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content {
+  text-align: center;
+  min-width: 325px;
+  max-width: 590px;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.logo {
+  width: 100%;
+  display: grid;
+  padding: 5rem 0;
+  place-content: center;
+}
+h2 {
+  font-size: 1.5rem;
+  max-width: 90%;
+  margin: auto;
+  color: var(--DarkGrayishBlue);
+}
+h1 {
+  font-size: 1.8rem;
+}
+small {
+  color: var(--GrayishBlue);
+  font-size: 1rem;
+  line-height: 25px;
+}
+section {
+  padding: 0 2rem;
+}
+.buttons {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.btn {
+  border: none;
+  padding: 1rem 0;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+}
+.btn:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.greenBtn {
+  background-color: var(--StrongCyan);
+  border-bottom: 5px solid #159a86;
+}
+.blueBtn {
+  background-color: var(--LightBlue);
+  border-bottom: 5px solid #3b4fe3;
+}
+.greenBtn:hover {
+  box-shadow: 0px 10px 20px #159a863d;
+}
+.blueBtn:hover {
+  box-shadow: 0px 5px 20px #3b4fe33d;
+}
+.device img {
+  margin: 4rem 0;
+  width: 100%;
+}
+.benef {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.benef .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.wf {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.wf .text {
+  gap: 0.5rem;
+}
+.wfIcon {
+  margin-bottom: 1.5rem;
+}
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f6f8;
+  padding-bottom: 3rem;
+  margin-top: 15rem;
+}
+footer .logo {
+  width: 60px;
+  padding: 0;
+  padding-top: 3rem;
+}
+.sects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2em 0;
+}
+.sects a {
+  color: var(--DarkGrayishBlue);
+  text-decoration: none;
+}
+.nets {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.sects a:hover {
+  color: var(--StrongCyan);
+}
+.net {
+  width: 24px;
+  height: 24px;
+}
+.net:hover .svg .path {
+  fill: var(--StrongCyan);
+}
+.x {
+  transform: translateY(2.5px);
+}
+@media only screen and (min-width: 900px) {
+  body {
+    background-image: url("./images/bg-header-desktop.png");
+  }
+  .content {
+    width: auto;
+  }
+  section {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons {
+    display: grid;
+    width: 350px;
+    font-size: 18pxs;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .asd {
+    display: flex;
+    width: 200%;
+    margin-top: 5rem;
+    align-items: center;
+    gap: 5rem;
+  }
+  .asd small,
+  .asd h2 {
+    text-align: start;
+    align-items: start;
+    margin: 0;
+  }
+  .asd small {
+    font-size: 14px;
+  }
+  .device {
+    width: 800px;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    width: 200%;
+    gap: 1rem;
+  }
+  .sponsors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-content: center;
+    width: 200%;
+    gap: 7rem;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    margin-top: 10rem;
+  }
+  .sects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+  }
+  footer .logo {
+    padding: 0;
+  }
+}
